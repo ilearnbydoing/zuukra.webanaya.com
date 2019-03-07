@@ -10,28 +10,28 @@ $EmailFrom = "info@hnhtwenty.com";
 $Subject = "Zuukra - You have received New Enquiry";
 
 // prepare email body text
-$Body = "Name: ";
-$Body .= $name;
-$Body .= "\n";
+$body .= "Name: ";
+$body .= $name;
+$body .= "\n";
 
-$Body .= "Email: ";
-$Body .= $email;
-$Body .= "\n";
+$body .= "Email: ";
+$body .= $email;
+$body .= "\n";
 
-$Body .= "Phone: ";
-$Body .= $phone;
-$Body .= "\n";
+$body .= "Phone: ";
+$body .= $phone;
+$body .= "\n";
 
-$Body .= "Company: ";
-$Body .= $company;
-$Body .= "\n";
+$body .= "Company: ";
+$body .= $company;
+$body .= "\n";
 
-$Body .= "City: ";
-$Body .= $city;
-$Body .= "\n";
+$body .= "City: ";
+$body .= $city;
+$body .= "\n";
 
 // send email
-$success = mail($EmailTo, $Subject, $Body, "From:".$EmailFrom);
+$success = mail($EmailTo, $Subject, $body, "From:".$EmailFrom);
 
 // redirect to success page
 if ($success){
