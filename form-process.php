@@ -10,7 +10,7 @@ $EmailFrom = "info@hnhtwenty.com";
 $Subject = "Zuukra - You have received New Enquiry";
 
 // prepare email body text
-$Body .= "Name: ";
+$Body = "Name: ";
 $Body .= $name;
 $Body .= "\n";
 
